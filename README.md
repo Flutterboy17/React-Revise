@@ -1,160 +1,233 @@
 # React-Revise
 
 Welcome to **React-Revise** 👋
-This repository is part of my React learning journey where I am revising React **from scratch**, step by step, using a clear roadmap and a simple teaching style.
 
-Think of this repository as a classroom.
-I am the student, and this README explains concepts as if a teacher is sitting beside me and explaining everything calmly, in real-world language, without jumping into advanced or confusing patterns.
+This repository is my personal React revision space. I am learning React step by step, and instead of rushing forward, I decided to pause and **revise everything from scratch** using a clear roadmap and a calm learning approach.
 
-The goal is not speed.
-The goal is **clarity, confidence, and strong fundamentals**.
+In this repository, React is explained the way a teacher would explain it to a student sitting in front of them.
+No shortcuts.
+No advanced syntax too early.
+No assumptions that the learner already knows things.
 
----
-
-## How this repository is structured
-
-Every topic in this repository follows the same learning model:
-
-First, we understand the **concept** in simple words.
-Then we go through the **learning or theory** part where things are explained in detail.
-After that, we do **practice** with very basic code examples.
-Finally, we build a **small project** to connect everything together.
-
-This way, nothing feels random or overwhelming.
+The focus is **understanding**, not memorizing.
 
 ---
 
-## My React Learning Roadmap
+## Why this repository exists
+
+While learning React, it is very easy to move forward without fully understanding the basics.
+Things start working, but the *why* stays unclear.
+
+This repository fixes that problem.
+
+Every concept is revisited slowly.
+Every feature is practiced with simple code.
+Every project connects learning with real usage.
+
+This is not a showcase repository.
+This is a **learning and revision repository**.
+
+---
+
+## Teaching style used in this repo
+
+This repo follows a consistent learning model for every week and topic.
+
+First, we clearly explain the **concept** in simple words.
+Then we go into **learning or theory**, explained in paragraphs like a real lesson.
+After that, we do **practice**, using very basic examples that are easy to read and understand.
+Finally, we build a **small project** so the concept makes sense in a real scenario.
+
+This approach keeps things structured and removes confusion.
+
+---
+
+## React Roadmap Followed in This Repository
 
 I am following a 4-week React roadmap.
-At the time of writing this README, I have already learned up to **Week 4**, but Week 4 is not fully completed yet.
-Before moving forward, I decided to **revise everything from the beginning**, starting again from Week 1, Day 1.
+At the time of writing this README, I have learned up to Week 4, but Week 4 is still in progress.
+Instead of pushing forward, I chose to **revise everything again from the beginning** using the same roadmap.
 
-This repository is that revision.
+Below is a complete overview of what this repository covers.
 
 ---
 
 ## Week 1: React Basics and JSX
 
-### What this week is about
+### What this week teaches
 
-In Week 1, the focus is on understanding **what React actually is**, why people use it, and how React applications are structured.
-There is no complex logic here.
-This week is about building a strong base.
+Week 1 focuses on understanding **what React is** and **why it is used**.
+Before writing logic, it is important to understand how React thinks.
 
-We learn how components work, how JSX looks, and how data moves between components using props.
+This week explains what components are, how JSX works, and how data moves between components using props.
 
----
-
-## Week 1 – Day 1
-
-### Installing Node.js and creating the first React app
-
-### Concept
-
-Before we can use React, we need an environment where React can run.
-React applications are built using JavaScript, and JavaScript outside the browser needs something called **Node.js**.
-
-Node.js allows us to run JavaScript on our computer, not just inside a browser.
-React tools depend on Node.js, so installing it is the first step.
+Nothing complex happens here.
+This week builds the foundation.
 
 ---
 
-### Learning and Theory
+### Concepts covered in Week 1
 
-Once Node.js is installed, we use a tool called **Create React App**.
-This tool sets up everything for us automatically.
-It creates folders, installs required files, and gives us a ready-to-run React project.
+We start by understanding what React actually is and why developers prefer it over plain JavaScript for building user interfaces.
 
-At this stage, we do not need to understand every file.
-It is completely fine if many things look confusing.
-The goal is only to understand **where React starts** and **how to run it**.
+Then we learn about **components**, which are the building blocks of any React app.
+We understand how JSX looks like HTML but works like JavaScript.
 
----
+We also learn how components communicate using **props**, and how multiple components can be combined together.
 
-### Practice
+The idea of the **Virtual DOM** is introduced at a high level so React behavior makes sense.
 
-After installing Node.js, we create our first React app using this command:
-
-```
-npx create-react-app my-first-react-app
-```
-
-This command creates a new folder with a working React application inside it.
-
-Then we move into that folder and start the app:
-
-```
-cd my-first-react-app
-npm start
-```
-
-When the app runs, the browser opens automatically, and we see a React welcome screen.
-This confirms that React is working correctly on our system.
-
-At this point, we are not writing React code yet.
-We are only making sure the setup works.
+Finally, we learn how to set up a React project using Create React App.
 
 ---
 
-### Mini Practice Task
+### Project for Week 1: Business Card Component
 
-Open the project folder and look at the `src` folder.
-Inside it, you will see a file called `App.js`.
+At the end of this week, we build a **Business Card Component**.
 
-This file contains a simple React component.
-Do not try to understand everything yet.
-Just notice that the page you see in the browser comes from this file.
+The goal of this project is to understand reusability.
+We create one component and reuse it multiple times with different data.
 
-Change some text inside `App.js`, save the file, and notice how the browser updates automatically.
-This is called **hot reload**, and it is one of the reasons developers love React.
+Each card receives props like name, title, email, and image.
+Simple CSS is used to make it presentable.
 
----
-
-### Project for Week 1
-
-At the end of Week 1, we build a **Business Card Component**.
-
-This project helps us understand how components and props work together.
-
-The idea is simple.
-
-We create a reusable business card component.
-We pass data like name, title, email, and image as props.
-Then we reuse the same component multiple times with different data.
-Basic CSS is added to make it look clean.
-
-No databases.
-No APIs.
-Only React basics.
+This project proves that React components are reusable and flexible.
 
 ---
 
-## Upcoming Weeks Overview
+## Week 2: State and Events
 
-After Week 1, the roadmap continues like this:
+### What this week teaches
 
-In **Week 2**, we learn about state, events, and user interaction.
-We build counters and a todo list where users can add and manage tasks.
+Week 2 is where React starts to feel interactive.
+Here, we learn how data changes over time and how users interact with the UI.
 
-In **Week 3**, we learn about side effects using `useEffect`.
-We fetch data from APIs and build a weather dashboard.
-
-In **Week 4**, we focus on better app structure, global state using Context, and reusable logic using custom hooks.
-
-Each week builds slowly on the previous one.
-Nothing is rushed.
+This week explains how React remembers values using state and how user actions trigger changes.
 
 ---
 
-## Final Note
+### Concepts covered in Week 2
 
-This repository is not about showing advanced React skills.
-It is about **learning React properly**, the way it should be learned.
+We learn about the **useState** hook and understand why React needs state.
 
-If you are also learning React and feel confused by complex tutorials, this repository is for you.
-Simple explanations.
-Simple code.
-Strong fundamentals.
+We handle user actions like clicks, typing, and form submissions using event handlers.
 
-Let’s revise React the right way 🚀
+We learn what **controlled components** are and why React should control form inputs.
+
+Conditional rendering is introduced so the UI can change based on state.
+
+We also learn how to render lists and why keys are important in React.
+
+---
+
+### Project for Week 2: Counter and Todo List
+
+This week includes two small projects.
+
+First, we build a simple **counter** with increment and decrement buttons.
+This helps understand how state updates work.
+
+Then we build a **Todo List application**.
+
+Users can add todos, mark them as complete, delete them, and filter between all, active, and completed tasks.
+
+All data is stored only in React state.
+No database is used yet.
+
+This project helps connect state, events, lists, and conditional rendering together.
+
+---
+
+## Week 3: useEffect and Side Effects
+
+### What this week teaches
+
+Week 3 explains how React handles things that happen **outside the component**, like fetching data or reacting to changes.
+
+This is where we learn about side effects and how React components behave over time.
+
+---
+
+### Concepts covered in Week 3
+
+We learn about the **useEffect** hook and why it exists.
+
+The idea of component lifecycle is explained in simple terms, such as when a component loads or updates.
+
+We learn how to fetch data from external APIs and store it in state.
+
+Dependency arrays are explained carefully so effects do not run unnecessarily.
+
+Cleanup functions are introduced to avoid unwanted behavior.
+
+---
+
+### Project for Week 3: Weather Dashboard
+
+In this project, we build a **Weather Dashboard**.
+
+The app fetches weather data from the OpenWeatherMap API.
+Users can search for a city and see current weather information.
+
+A loading message is shown while data is being fetched.
+Errors are handled gracefully if something goes wrong.
+
+The last searched city is stored so the app feels more user friendly.
+
+This project shows how real data works in React.
+
+---
+
+## Week 4: App Architecture, Context, and Custom Hooks
+
+### What this week teaches
+
+Week 4 focuses on writing **cleaner and more scalable React apps**.
+
+As apps grow, passing props everywhere becomes messy.
+This week teaches how to manage global state properly and reuse logic.
+
+---
+
+### Concepts covered in Week 4
+
+We learn how to structure components in a clean way and manage props flow.
+
+The problem of **props drilling** is explained clearly.
+
+We use **Context API** to manage global state like themes.
+
+We introduce **useReducer** to handle complex state logic in an organized way.
+
+Custom hooks are created to reuse logic without duplicating code.
+
+---
+
+### Project for Week 4: Theme Switcher and User Preferences App
+
+This project ties everything together.
+
+We build a **light and dark theme switcher** using Context.
+
+Global state is managed using Context and useReducer.
+
+Custom hooks are used for reusable logic.
+
+User preferences are stored in localStorage so settings persist after refresh.
+
+This project focuses more on structure and clean design than flashy features.
+
+---
+
+## Final Thoughts
+
+This repository is my React classroom.
+
+It is slow by design.
+It is simple by intention.
+It is detailed so concepts actually stick.
+
+If you are revising React or learning it for the first time, this repository is meant to guide you calmly without overwhelming you.
+
+Strong basics create strong developers.
+This repo exists to build those basics 🚀
