@@ -1,8 +1,5 @@
-import { useState } from 'react'
-import BusinessCard from './Day-1/components/BusinessCard'
-import UserCard from './Day-1/components/UserCard'
-import Counter from './Day-2/components/Counter'
-import SimpleForm from './Day-2/components/SimpleForm'
+
+import ToggleMessage from './Day-3/components/ToggleMessage'
 
 
 function App() {
@@ -13,10 +10,10 @@ function App() {
       {/* <UserCard /> */}
 
       {/* {<Counter /> } */}
-      <SimpleForm/>
+      {/* <SimpleForm/> */}
 
+      <ToggleMessage />
 
-    
     </>
   )
 }
