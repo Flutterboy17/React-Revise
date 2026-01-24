@@ -1,4 +1,5 @@
 
+import ShowPassword from './Day-3/components/ShowPassword'
 import ToggleMessage from './Day-3/components/ToggleMessage'
 
 
@@ -12,7 +13,8 @@ function App() {
       {/* {<Counter /> } */}
       {/* <SimpleForm/> */}
 
-      <ToggleMessage />
+      {/* <ToggleMessage /> */}
+      <ShowPassword />
 
     </>
   )
