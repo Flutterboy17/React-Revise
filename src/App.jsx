@@ -1,6 +1,8 @@
 
-import ShowPassword from './Day-3/components/ShowPassword'
-import ToggleMessage from './Day-3/components/ToggleMessage'
+import ShowPassword from './Day-3/ShowPassword'
+import ToggleMessage from './Day-3/ToggleMessage'
+import NameList from './Day-4/NameList'
+import TodoList from './Day-4/TodoList'
 
 
 function App() {
@@ -14,7 +16,10 @@ function App() {
       {/* <SimpleForm/> */}
 
       {/* <ToggleMessage /> */}
-      <ShowPassword />
+      {/* <ShowPassword /> */}
+
+      {/* <NameList /> */}
+      <TodoList />
 
     </>
   )
