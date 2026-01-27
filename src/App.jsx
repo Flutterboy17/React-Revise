@@ -5,6 +5,8 @@ import NameList from './Day-4/NameList'
 import TodoList from './Day-4/TodoList'
 import FetchPostsWithStatus from './Day-5/FetchPostsWithStatus'
 import FetchUsers from './Day-5/FetchUsers'
+import MouseTracker from './Day-6/MouseTracker'
+import Timer from './Day-6/Timer'
 
 
 function App() {
@@ -22,8 +24,12 @@ function App() {
 
       {/* <NameList /> */}
       {/* <TodoList /> */}
+
       {/* <FetchUsers /> */}
-      <FetchPostsWithStatus />
+      {/* <FetchPostsWithStatus /> */}
+
+      {/* <Timer /> */}
+      <MouseTracker />
 
     </>
   )
