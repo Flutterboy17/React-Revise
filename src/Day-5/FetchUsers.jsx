@@ -3,12 +3,22 @@ import React, { useEffect, useState } from "react";
 const FetchUsers = () => {
     const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/users")
-            .then((response) => response.json())
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Something went wrong");
+                }
+                return response.json();
+            })
             .then((data) => {
                 setUsers(data);
+                setLoading(false);
+            })
+            .catch((err) => {
+                setError(err.message);
                 setLoading(false);
             });
     }, []);
@@ -20,9 +30,22 @@ const FetchUsers = () => {
                     Users List
                 </h1>
 
-                {loading ? (
-                    <p className="text-slate-500 text-sm">Loading users...</p>
-                ) : (
+                {/* Loading UI */}
+                {loading && (
+                    <p className="text-slate-500 text-sm text-center">
+                        Loading users...
+                    </p>
+                )}
+
+                {/* Error UI */}
+                {error && (
+                    <p className="text-red-500 text-sm text-center">
+                        {error}
+                    </p>
+                )}
+
+                {/* Users UI */}
+                {!loading && !error && (
                     <div className="space-y-2">
                         {users.map((user) => (
                             <div

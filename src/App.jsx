@@ -3,6 +3,7 @@ import ShowPassword from './Day-3/ShowPassword'
 import ToggleMessage from './Day-3/ToggleMessage'
 import NameList from './Day-4/NameList'
 import TodoList from './Day-4/TodoList'
+import FetchPostsWithStatus from './Day-5/FetchPostsWithStatus'
 import FetchUsers from './Day-5/FetchUsers'
 
 
@@ -21,7 +22,8 @@ function App() {
 
       {/* <NameList /> */}
       {/* <TodoList /> */}
-      <FetchUsers />
+      {/* <FetchUsers /> */}
+      <FetchPostsWithStatus />
 
     </>
   )
