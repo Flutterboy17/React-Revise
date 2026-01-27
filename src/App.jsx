@@ -8,8 +8,10 @@ import FetchPostsWithStatus from './Day-5/FetchPostsWithStatus'
 import FetchUsers from './Day-5/FetchUsers'
 import MouseTracker from './Day-6/MouseTracker'
 import Timer from './Day-6/Timer'
-import { Home } from './Day-7/context/home'
-import ThemeContext from './Day-7/context/ThemeContext'
+import { Home } from './Day-7/Home'
+import ThemeContext from './Day-7/ThemeContext'
+import ReducerCounter from './Day-8/ReducerCounter'
+import ThemeReducer from './Day-8/ThemeReducer'
 
 
 function App() {
@@ -35,10 +37,13 @@ function App() {
 
       {/* <Timer /> */}
       {/* <MouseTracker /> */}
-
+{/* 
       <ThemeContext.Provider value={{ theme, setTheme }}>
         <Home />
-      </ThemeContext.Provider>
+      </ThemeContext.Provider> */}
+
+      {/* <ReducerCounter /> */}
+      <ThemeReducer />
     </>
   )
 }
