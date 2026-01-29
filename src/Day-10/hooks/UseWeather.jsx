@@ -21,7 +21,7 @@ const useWeather = (city) => {
 
             try {
                 const response = await fetch(
-                    `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=73d925c3c9af7e948fb6f5339cd04ed3`
+                    `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=KEY`
                 )
 
                 if (!response.ok) {
