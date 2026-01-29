@@ -14,6 +14,7 @@ import ReducerCounter from './Day-8/ReducerCounter'
 import ThemeReducer from './Day-8/ThemeReducer'
 import ToggleExample from './Day-9/ToggleExample'
 import LocalStorageExample from './Day-9/LocalStorageExample'
+import Main from './Day-10/Main'
 
 
 function App() {
@@ -48,7 +49,8 @@ function App() {
       {/* <ThemeReducer /> */}
 
       {/* <ToggleExample /> */}
-      <LocalStorageExample />
+      {/* <LocalStorageExample /> */}
+      {/* <Main /> */}
     </>
   )
 }
