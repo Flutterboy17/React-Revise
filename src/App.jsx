@@ -12,6 +12,8 @@ import { Home } from './Day-7/Home'
 import ThemeContext from './Day-7/ThemeContext'
 import ReducerCounter from './Day-8/ReducerCounter'
 import ThemeReducer from './Day-8/ThemeReducer'
+import ToggleExample from './Day-9/ToggleExample'
+import LocalStorageExample from './Day-9/LocalStorageExample'
 
 
 function App() {
@@ -37,13 +39,16 @@ function App() {
 
       {/* <Timer /> */}
       {/* <MouseTracker /> */}
-{/* 
+      {/* 
       <ThemeContext.Provider value={{ theme, setTheme }}>
         <Home />
       </ThemeContext.Provider> */}
 
       {/* <ReducerCounter /> */}
-      <ThemeReducer />
+      {/* <ThemeReducer /> */}
+
+      {/* <ToggleExample /> */}
+      <LocalStorageExample />
     </>
   )
 }
